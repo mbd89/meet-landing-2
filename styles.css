@@ -1,0 +1,291 @@
+body{
+    font-family: 'Red Hat Display';
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+header{
+    text-align: center;
+    margin-top:3em;
+    margin-bottom: 5em;
+}
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+}
+.hero-buttons button:nth-of-type(2){
+    background: #855FB1;
+}
+
+h1{
+  color: #28283D;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 64px;
+
+}
+
+.download{
+    color: white;
+    font-weight: 900;
+    background-color:#4D96A9;
+    border: none;
+    padding: 1.2em 2em;
+    border-radius: 25px;
+    
+}
+
+.hero-text{
+    color: #87879D;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 540px;
+    display: grid;
+    place-items: center;
+   
+}
+
+.hero-content{
+ display: flex;
+ margin-bottom: 20em;
+ justify-content: space-around;
+ align-items: center;
+ gap: 75px;
+}
+
+.image-hero-right{
+ margin-top: 3em;
+ object-fit: cover;
+ 
+}
+
+.carousel-images img{
+   max-width: 255px;
+   border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.images{
+    margin-bottom: 5em;
+}
+
+
+.last-part p:first-child {
+    color: #4D96A9;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.last-part h2{
+   text-align: center;
+   color: #28283D;
+   font-size: 40px;
+   font-weight: 900;
+   line-height: 44px;
+}
+
+.last-part p:nth-of-type(2){
+    color: #87879D;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.last-part{
+    max-width: 540px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20em;
+}
+
+
+footer{
+     background-color: rgb(98, 155, 174);
+     width: 100% !important; 
+}
+
+footer picture {
+  background-color: rgb(98, 155, 174);
+
+
+}
+footer picture img{
+    opacity: 0.1045;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgb(98, 155, 174);
+}
+
+footer div{
+    margin-top: -175px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(98, 155, 174);
+    flex-wrap: wrap;
+}
+
+footer div h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    font-style: normal;
+    max-width: 350px;
+    
+}
+
+footer div p{
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 350px;   
+}
+.blue{
+    border-radius: 29px;
+    background: #855FB1;
+}
+
+.second{
+    display: none;
+  
+}
+.image-hero-tablet{
+    display: none;
+}
+.mobile-footer-image{
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+.image-hero-right, .image-hero-left{
+    display: none;
+}
+.image-hero-tablet{
+    display: block;
+   
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20em;
+    justify-content: center;
+    align-items: center;
+   }
+   .carousel-images img{
+    max-width: 164px;
+    border-radius: 8px;
+ }
+
+
+ .second {
+    display:block;
+ }
+ .first{
+    display:none;
+ }
+
+
+.third{
+     margin-top: -25em;
+}
+ footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+footer div h2 {
+  margin-bottom: 0;
+}
+
+}
+
+
+@media only screen and (max-width: 430px){
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+
+    .image-hero-tablet img{
+        width: 100%;
+    }
+
+    .last-part{
+        margin-bottom: 10em;
+        padding: 2em;
+        max-width: 327px;
+    }
+    .last-part h2{
+     font-size: 32px;
+    }
+    .last-part p {
+        font-size: 16px;
+    }
+    .third{
+        margin-top: -20em;
+   }
+   .third h2, .third p{
+    max-width: 327px;
+}
+.third h2{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 36px;
+}
+.third p{
+text-align: center;
+font-family: Red Hat Display;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+}
+.second {
+    display:none;
+ }
+.mobile-footer-image{
+    display: block;
+}
+.hero-text{
+    max-width: 327px;
+    padding:1em;
+}
+.hero-text h1{
+    font-size: 40px;
+    line-height: 44px;
+}
+.hero-text p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+}
